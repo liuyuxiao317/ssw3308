@@ -1,56 +1,170 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                <title>Campus Events Portal</title>
-    </head>
-    <body>
-        <H1>Campus Events Portal</H1>
-        <h2>Welcome to the Campus Events Portal</h2>
-        <img src="/lab01-html/images/campus.jpg" alt="campus" width="600">
-        <h2>about</h2>
-        <p>visit the <a href="https://www.upm.edu.my/">UPM</a> to learn more about us.</p>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <h2 id="featured-events">Featured Events</h2>
-    <ul>
-        <li>
-            <strong>badminton match</strong>
-            <p>Activities to make friends and keep fit.</p>
-        </li>
-        <li>
-            <strong>CTF competition</strong>
-            <p>Practice your network penetration and defence skills.</p>
-        </li>
-        <li>
-            <strong>Algorithm contest</strong>
-            <p>Competing to see whose code is better</p>
-        </li>
-    </ul>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <p><a href="#featured-events">Jump to Featured Events</a></p>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Events Portal</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+</head>
+<body>
+
     
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #7a1f2b;">
+        <div class="container">
+            <a class="navbar-brand" href="#">Campus Events Portal</a>
+            <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#mainNav"
+                    aria-controls="mainNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#featured-events">Events</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#schedule">Schedule</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#register">Register</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container mt-4">
+        <h1>Campus Events Portal</h1>
+        <p class="lead">Welcome to the Campus Events Portal. Here you can discover upcoming events on campus.</p>
+    </div>
+
     
-    </body>
+    <section id="about" class="container my-5">
+        <h2>About</h2>
+        <p>This portal lists fictional campus events for students and staff.</p>
+        <p>
+            Visit the
+            <a href="https://www.upm.edu.my/" target="_blank" rel="noopener">UPM website</a>
+            to learn more about us.
+        </p>
+        <img src="images/campus.jpg"
+            alt="Students gathering at the campus main hall"
+            class="img-fluid rounded mt-3" style="max-width: 600px;">
+    </section>
+
+    
+    <section id="featured-events" class="container my-5">
+        <h2 class="mb-4">Featured Events</h2>
+
+        <div class="row g-4">
+            
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card event-card h-100">
+                    <div class="card-body">
+                        
+                        <h3 class="card-title h5">Badminton Match</h3>
+                        <span class="badge bg-primary mb-2">Sports</span>
+                        <p class="card-text">Activities to make friends and keep fit.</p>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card event-card h-100">
+                    <div class="card-body">
+                        <h3 class="card-title h5">CTF Competition</h3>
+                        <span class="badge bg-success mb-2">Technology</span>
+                        <p class="card-text">Practice your network penetration and defence skills.</p>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card event-card h-100">
+                    <div class="card-body">
+                        <h3 class="card-title h5">Algorithm Contest</h3>
+                        <span class="badge bg-warning text-dark mb-2">Academic</span>
+                        <p class="card-text">Competing to see whose code is better.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="schedule" class="container my-5">
+        <h2 class="mb-3">Event Schedule</h2>
+        <div class="table-wrapper">
+            <table class="table table-striped table-hover">
+                <thead class="table-dark">
+                    <tr>
+                        <th scope="col">Date</th>
+                        <th scope="col">Event</th>
+                        <th scope="col">Venue</th>
+                        <th scope="col">Time</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>2026-11-01</td><td>Badminton Match</td><td>Sports Complex</td><td>10:00</td></tr>
+                    <tr><td>2026-11-05</td><td>CTF Competition</td><td>Computer Lab 1</td><td>19:00</td></tr>
+                    <tr><td>2026-11-10</td><td>Algorithm Contest</td><td>Main Hall</td><td>08:00</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section id="register" class="container my-5">
+        <h2 class="mb-3">Register Your Interest</h2>
+        <form class="row g-3 needs-validation" novalidate>
+            <div class="col-md-6">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" required>
+                <div class="invalid-feedback">Please enter your name.</div>
+            </div>
+            <div class="col-md-6">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" required>
+                <div class="invalid-feedback">Please enter a valid email.</div>
+            </div>
+            <div class="col-md-6">
+                <label for="eventSelect" class="form-label">Event</label>
+                <select class="form-select" id="eventSelect" required>
+                    <option value="" selected disabled>Choose an event</option>
+                    <option>Badminton Match</option>
+                    <option>CTF Competition</option>
+                    <option>Algorithm Contest</option>
+                </select>
+                <div class="invalid-feedback">Please choose an event.</div>
+            </div>
+            <div class="col-12">
+                <button class="btn btn-primary" type="submit">Submit</button>
+            </div>
+        </form>
+    </section>
+
+    
+    <footer class="text-center text-muted py-4">
+        <p>&copy; 2026 Campus Events Portal (fictional).</p>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        (() => {
+            'use strict';
+            const forms = document.querySelectorAll('.needs-validation');
+            Array.from(forms).forEach(form => {
+                form.addEventListener('submit', event => {
+                    if (!form.checkValidity()) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                }, false);
+            });
+        })();
+    </script>
+
+</body>
 </html>
