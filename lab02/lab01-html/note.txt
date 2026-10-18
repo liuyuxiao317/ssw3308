@@ -1,0 +1,9 @@
+first test:
+error :1.I used a backslash in the image path  I corrected it to a forward slash relative path: images/campus.jpg.
+	2.not quit sure about Internal Link
+
+knowledge:
+alt->Alternative text ,which means if the graph cant show , it will show the word .
+Internal Link->just like bookmark, back to the please u mark.
+
+W3C Validator result now: No errors or warnings.
